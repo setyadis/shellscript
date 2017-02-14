@@ -1,0 +1,9 @@
+/INFILE=${INPUT_2}
+ /FIELD=(VARIABEL       ,POS=1,SEP='|')
+ /FIELD=(VARIABEL       ,POS=2,SEP='|')
+ /FIELD=(NUMBER         ,POS=3,SEP='|',NUMERIC)
+
+/SORT
+/KEY=NUMBER    #sorted by number
+
+/OUTFILE=2_OUTPUT_FILE_SORTED${INIT_DATE}.txt

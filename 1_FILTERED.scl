@@ -1,0 +1,10 @@
+/INFILE=${INPUT_1}
+ /FIELD=(VARIABLE                    ,POS=1,SEP='|')
+ /FIELD=(VARIABLE                    ,POS=2,SEP='|')
+ /FIELD=(VARIABLE                    ,POS=3,SEP='|')
+
+/OUTFILE=1_OUTPUT_FILE_FILTERED${INIT_DATE}.txt
+/include where REGION_ID EQ 2
+ /FIELD=(VARIABLE                    ,POS=1,SEP='|')
+ /FIELD=(VARIABLE                    ,POS=2,SEP='|')
+ /FIELD=(VARIABLE                    ,POS=3,SEP='|')
